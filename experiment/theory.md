@@ -21,13 +21,16 @@ Another way to represent the images is by producing a projected image and its re
 <b>3.	Sampling using 0-D Probe (Point Probe): </b>Intersection of point with structure. We are interested to look how many points are intersecting with the particles.<br> 
 Use of all the probes mentioned above plays a key role to understand the structures and help them correlate with the properties to get a proper process-structure-property correlation paradigm within the materials domain.<br><br>
 <b>•	Interaction of Probes with the structure:</b> Probes interacts with the microstructural features to produce the “events”. (e.g., interactions of plane probes with a volume feature produces 2-D cross section):<br>
-|3-D Feature | Probe | Event | Measurements|<br> 
-|Volume | Plane | Cross-section  | Area | <br>
-| Surface  | Plane | Line Traces  | Length | <br>
-| Line | Plane | Point Intersection  | Count | <br>
-| Volume | Line   | Intercept Length  | Length | <br>
-|Surface | Line | Point-Intersection  | Count | <br>
-|Volume | Point | Point-Intersection  | Count | <br><br>
+
+| 3-D Feature | Probe | Event |  Measurements |
+| ----- | --------------- | :--------------- |:--------------- |
+|Volume | Plane | Cross-section  | Area | 
+| Surface  | Plane | Line Traces  | Length | 
+| Line | Plane | Point Intersection  | Count | 
+| Volume | Line   | Intercept Length  | Length | 
+|Surface | Line | Point-Intersection  | Count | 
+|Volume | Point | Point-Intersection  | Count | 
+
 Stereology is built on the concept of geometrical probability. So, if there are large number of particles and there is a plane probe which cuts the structure, not all particles will get cut and only some of them will be cut. How many of them will be cut will depend on the probability of the plane probe intersecting the particles.<br> <br>
 <b>Estimation:</b> Stereological equations and mathematical models are employed to estimate the properties of interest, such as volume, surface area, length, or number of objects. These estimations are based on the data collected from the samples. <br>
 

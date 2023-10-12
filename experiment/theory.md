@@ -13,17 +13,16 @@ Another way to represent the images is by producing a projected image and its re
 2.	Transmitted light microscopes are used for observing the microstructures of the transparent materials.<br> 
 3.	Electron microscopes are used with higher resolutions to observe the images for obtaining greater details and understand its features in the microstructures. Among these microscopes, most common are Scanning Electron Microscopes (SEM) which shows secondary and back scattered electron images, Transmission Electron Microscopes (TEM) which shows projected images, X-ray map images, and Scanning Tunnelling Microscopes (STM). Stereology has the power to quantify the true interlamellar spacing of the pearlite.<br> <br>
 <b>Important concepts of Stereology:</b><br>
-<b>•	Sectioning or sampling:</b> Stereology involves sampling in a systematic random way to ensure unbiased representation of the entire structure to be studied. Sectioning involves random sampling of the 3-D block using 2-D plane. Selection of the sample is done randomly and unbiasedly towards any specific regions of interest. <br>
+<b>•	Sectioning or sampling:</b> Stereology involves sampling in a systematic random way to ensure unbiased representation of the entire structure to be studied. Sectioning involves random sampling of the 3-D block using 2-D plane. Selection of the sample is done randomly and unbiasedly towards any specific regions of interest. <br><br>
 <b>•	Sampling probes:</b> These are the basic measurements units used for the microstructural assessments and studies. It can be represented using different shapes such as points, lines, areas, or volumes, depending on the specific stereological method and property of interest. To bring the accuracy to obtained results, proper probe selection is of utmost importance. Section can be done using these lines and probes and it is also known as sampling of materials or sampling by probes of various dimensions. If we section a 2-D system then probe should be 2-D, section with line means a 1-D probe, and sectioning using a point means a 0-D probe.<br> <br>
-•	Structures are sectioned and sampled using different probes. 
+•	Structures are sectioned and sampled using different probes.<br> 
 <b>1.	Sampling using 2-D Probe (Plane probe):</b> Intersection of a plane with the structure. 3-D structure intersects using planes. After sectioning, line appears at the sections of surfaces, points appear at the planes where the lines were present in 3-D structure and area elements and section profiles appears at the places where particles are present in 3-D materials.<br><br> 
 <b>2.	Sampling by 1-D Probe or Line:</b> If we put grids of lines along horizontal and vertical directions on the 2-D probe then it is known as sampling by 1-D probe or line probe which intersection of a line with the structure. One can check for the intersections line makes with the surface features. <br><br>
 <b>3.	Sampling using 0-D Probe (Point Probe): </b>Intersection of point with structure. We are interested to look how many points are intersecting with the particles.<br> 
 Use of all the probes mentioned above plays a key role to understand the structures and help them correlate with the properties to get a proper process-structure-property correlation paradigm within the materials domain.<br><br>
 <b>•	Interaction of Probes with the structure:</b> Probes interacts with the microstructural features to produce the “events”. (e.g., interactions of plane probes with a volume feature produces 2-D cross section):<br>
-### 
-| 3-D Feature | Probe | :Event | Measurements | <br>
-| ----- | ----- | ------ | ------------ |<br>
+### | 3-D Feature | Probe | :Event | Measurements | <br>
+| ----- | ----- | ----- | ----- |<br>
 | Volume | Plane | Cross-section  | Area | <br>
 | Surface  | Plane | Line Traces  | Length | <br>
 | Line | Plane | Point Intersection  | Count | <br>

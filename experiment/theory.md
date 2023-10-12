@@ -22,7 +22,6 @@ Another way to represent the images is by producing a projected image and its re
 Use of all the probes mentioned above plays a key role to understand the structures and help them correlate with the properties to get a proper process-structure-property correlation paradigm within the materials domain.<br><br>
 <b>•	Interaction of Probes with the structure:</b> Probes interacts with the microstructural features to produce the “events”. (e.g., interactions of plane probes with a volume feature produces 2-D cross section):<br>
 |3-D Feature | Probe | Event | Measurements|<br> 
-:--|:--|:--|:--|:--|:--|<br>
 |Volume | Plane | Cross-section  | Area | <br>
 | Surface  | Plane | Line Traces  | Length | <br>
 | Line | Plane | Point Intersection  | Count | <br>

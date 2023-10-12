@@ -21,9 +21,9 @@ Another way to represent the images is by producing a projected image and its re
 <b>3.	Sampling using 0-D Probe (Point Probe): </b>Intersection of point with structure. We are interested to look how many points are intersecting with the particles.<br> 
 Use of all the probes mentioned above plays a key role to understand the structures and help them correlate with the properties to get a proper process-structure-property correlation paradigm within the materials domain.<br><br>
 <b>•	Interaction of Probes with the structure:</b> Probes interacts with the microstructural features to produce the “events”. (e.g., interactions of plane probes with a volume feature produces 2-D cross section):<br>
-### | 3-D Feature | Probe | :Event | Measurements | <br>
-| ----- | ----- | ----- | ----- |<br>
-| Volume | Plane | Cross-section  | Area | <br>
+|3-D Feature | Probe | Event | Measurements|<br> 
+:--|:--|:--|:--|:--|:--|<br>
+|Volume | Plane | Cross-section  | Area | <br>
 | Surface  | Plane | Line Traces  | Length | <br>
 | Line | Plane | Point Intersection  | Count | <br>
 | Volume | Line   | Intercept Length  | Length | <br>
@@ -52,6 +52,7 @@ Concept:<br>
 where, n = Total number of points intersecting the particles<br>
 <centre>N = Total number of points present in the grid </centre><br>
 3.	Now, calculate the point fraction from each of the three microstructures. The average value, <P<sub>P</sub>> is an estimate of area fraction: A<sub>A</sub> = <P<sub>P</sub>>. We will get this value with a statistical or random error associated with it.<br>
+
 <b>Method 2: </b><br>
 <image src="images/Picture4.png"><br>
 <b>Figure 3.</b> Microstructures sectioned with the horizontal grids.<br>

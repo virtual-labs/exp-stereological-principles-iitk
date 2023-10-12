@@ -26,8 +26,8 @@ Use of all the probes mentioned above plays a key role to understand the structu
 | Surface  | Plane | Line Traces  | Length | <br>
 | Line | Plane | Point Intersection  | Count | <br>
 | Volume | Line   | Intercept Length  | Length | <br>
-|Surface | Line | Point-Intersection  | Count | <br>
-|Volume | Point | Point-Intersection  | Count | <br><br>
+|Surface | Line | Point-Intersection  | Count | 
+|Volume | Point | Point-Intersection  | Count | 
 Stereology is built on the concept of geometrical probability. So, if there are large number of particles and there is a plane probe which cuts the structure, not all particles will get cut and only some of them will be cut. How many of them will be cut will depend on the probability of the plane probe intersecting the particles.<br> <br>
 <b>Estimation:</b> Stereological equations and mathematical models are employed to estimate the properties of interest, such as volume, surface area, length, or number of objects. These estimations are based on the data collected from the samples. <br>
 

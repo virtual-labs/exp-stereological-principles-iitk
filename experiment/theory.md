@@ -57,7 +57,7 @@ where, n = Total number of points intersecting the particles<br>
 <centre>N = Total number of points present in the grid </centre><br>
 3.	Now, calculate the point fraction from each of the three microstructures. The average value, <P<sub>P</sub>> is an estimate of area fraction: A<sub>A</sub> = <P<sub>P</sub>>. We will get this value with a statistical or random error associated with it.<br>
 
-<b>Method 2: </b><br>
+<b><centre>Method 2:</centre></b><br>
 <image src="images/Picture4.png"><br>
 <b>Figure 3.</b> Microstructures sectioned with the horizontal grids.<br>
 1.	Here we will only have particle boundaries and we will draw horizontal gridlines over the microstructures.<br>

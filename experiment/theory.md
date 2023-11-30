@@ -3,6 +3,7 @@ Typical microstructural elements:<br>
 1.	3-D particles<br>
 2.	2-D surface or interfaces between particles and grains.<br>
 3.	1-D linear features such as dislocations, fibres, grain edges etc.,.<br>
+
 In materials science we deal with the opaque materials, and so we take a section of the material then polish it, etch it, and put it under a microscope to observe its features. It is important to mention here that the section cuts of lines will give points. Section cuts of surfaces will give lines, and section cuts of 3-D will give 2-D surfaces as shown in the Figure 1:<br>
 <image src="images/Picture1.png"><br><br>
 <b>Figure 1.</b> Section cuts of 3-D images on a 2-D plane.<br><br>
@@ -12,6 +13,7 @@ Another way to represent the images is by producing a projected image and its re
 1.	Optical microstructures are studied using the Reflected Light Microscopes (Metallurgical microscopes) for opaque materials.<br>
 2.	Transmitted light microscopes are used for observing the microstructures of the transparent materials.<br> 
 3.	Electron microscopes are used with higher resolutions to observe the images for obtaining greater details and understand its features in the microstructures. Among these microscopes, most common are Scanning Electron Microscopes (SEM) which shows secondary and back scattered electron images, Transmission Electron Microscopes (TEM) which shows projected images, X-ray map images, and Scanning Tunnelling Microscopes (STM). Stereology has the power to quantify the true interlamellar spacing of the pearlite.<br> <br>
+
 <b>Important concepts of Stereology:</b><br>
 <b>•	Sectioning or sampling:</b> Stereology involves sampling in a systematic random way to ensure unbiased representation of the entire structure to be studied. Sectioning involves random sampling of the 3-D block using 2-D plane. Selection of the sample is done randomly and unbiasedly towards any specific regions of interest. <br><br>
 <b>•	Sampling probes:</b> These are the basic measurements units used for the microstructural assessments and studies. It can be represented using different shapes such as points, lines, areas, or volumes, depending on the specific stereological method and property of interest. To bring the accuracy to obtained results, proper probe selection is of utmost importance. Section can be done using these lines and probes and it is also known as sampling of materials or sampling by probes of various dimensions. If we section a 2-D system then probe should be 2-D, section with line means a 1-D probe, and sectioning using a point means a 0-D probe.<br> <br>

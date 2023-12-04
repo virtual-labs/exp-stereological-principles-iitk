@@ -39,9 +39,9 @@ Use of all the probes mentioned above plays a key role to understand the structu
 Stereology is built on the concept of geometrical probability. So, if there are large number of particles and there is a plane probe which cuts the structure, not all particles will get cut and only some of them will be cut. How many of them will be cut will depend on the probability of the plane probe intersecting the particles.<br> <br>
 <b>6 Estimation:</b> Stereological equations and mathematical models are employed to estimate the properties of interest, such as volume, surface area, length, or number of objects. These estimations are based on the data collected from the samples. <br>
 
-<b>7 Important consequences:</b> <br> 
-<b>7.1</b>	Probe is of a lower dimension than the structure and leads to loss of information (e.g., shape). So, during analysis sometimes we use assumed shapes.<br> 
-<b>7.2</b>	Stereological methods are statistical in nature. One obtains average value and are subjected to statistical errors.<br>  
+<b>7 Important consequences:</b> <br> <br> 
+<b>7.1</b>	Probe is of a lower dimension than the structure and leads to loss of information (e.g., shape). So, during analysis sometimes we use assumed shapes.<br>  
+<b>7.2</b>	Stereological methods are statistical in nature. One obtains average value and are subjected to statistical errors.<br><br>  
 <b>7.3</b>	Stereological methods are based on mathematical rigour and based on probability and statistics.<br>  
 <b>8 Methods of Stereology</b> <br><br>
 <b>8.1	Point Counting:</b> In point counting, a grid with regularly spaced points is superimposed on a sample microstructure, and the number of points falling within the region of interest is counted. This method is commonly used for the estimation of volume fractions and particle densities.<br> <br>

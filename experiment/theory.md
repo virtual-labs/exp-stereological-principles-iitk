@@ -45,29 +45,29 @@ Stereology is built on the concept of geometrical probability. So, if there are 
 <b>7.3</b>	Stereological methods are based on mathematical rigour and based on probability and statistics.<br>  
 <b>8 Methods of Stereology</b> <br><br>
 <b>8.1	Point Counting:</b> In point counting, a grid with regularly spaced points is superimposed on a sample microstructure, and the number of points falling within the region of interest is counted. This method is commonly used for the estimation of volume fractions and particle densities.<br> <br>
-<b>8.2	Line Intercept Method:</b> The line intercept method involves the placement of lines randomly onto the sample microstructure followed by counting the total number of times line intersects the structure of interest. This is the most common method used to estimate the length and surface area.<br> 
+<b>8.2	Line Intercept Method:</b> The line intercept method involves the placement of lines randomly onto the sample microstructure followed by counting the total number of times line intersects the structure of interest. This is the most common method used to estimate the length and surface area.<br> <br>
 <b>8.3	Area Fraction Method:</b> This method estimates the volume fraction of the structures within a 2-D plane. It involves the count of total intersection points of the structures with a grid of points or lines.<br> <br>
 <b>9 Method 1:</b><br>
 <image src="images/Picture2.png"><br>
 <b>Figure 2.</b> Microstructures sectioned with both horizontal and vertical grids.<br>
 
-Structures coming from spherical particles in 3-D. Structures are coming from the spherical particles in 3-D. If we want to calculate area fraction of the particles. i.e., total area fraction of the particles in a unit area of image. Since microstructures vary in statistical manner so we want to use stereology for this calculation. <br>
-Concept:<br> 
-<b>9.1</b>	Put grid of points on the given microstructure. Now, count the total number of points and then count the total number of points lying inside the circular particles. <br>
+Structures coming from spherical particles in 3-D. Structures are coming from the spherical particles in 3-D. If we want to calculate area fraction of the particles. i.e., total area fraction of the particles in a unit area of image. Since microstructures vary in statistical manner so we want to use stereology for this calculation. <br><br>
+<b>Concept:</b><br> 
+<b>9.1</b>	Put grid of points on the given microstructure. Now, count the total number of points and then count the total number of points lying inside the circular particles. <br><br>
 <b>9.2</b>	Now, measure the point fraction (P<sub>P</sub>)<br>
 <image src="images/Picture3.png"><br>
 where, n = Total number of points intersecting the particles<br>
-<centre>N = Total number of points present in the grid </centre><br>
+<centre>N = Total number of points present in the grid </centre><br><br>
 <b>9.3</b>	Now, calculate the point fraction from each of the three microstructures. The average value, <P<sub>P</sub>> is an estimate of area fraction: A<sub>A</sub> = <P<sub>P</sub>>. We will get this value with a statistical or random error associated with it.<br>
 
 <b><centre>10 Method 2:</centre></b><br>
 <image src="images/Picture4.png"><br>
 <b>Figure 3.</b> Microstructures sectioned with the horizontal grids.<br>
-<b>10.1</b>	Here we will only have particle boundaries and we will draw horizontal gridlines over the microstructures.<br>
-<b>10.2</b>	Count the number of intersections with the particle boundaries.<br>
-<b>10.3</b>	Calculate, P<sub>L</sub> = n/L, number of intersections per unit length.<br>
-<b>10.4</b>	Obtain average value of P<sub>L</sub>, <P<sub>L</sub>>.<br>
-<b>10.5</b>	Average diameter of particles is given by:<br>
+<b>10.1</b>	Here we will only have particle boundaries and we will draw horizontal gridlines over the microstructures.<br><br>
+<b>10.2</b>	Count the number of intersections with the particle boundaries.<br><br>
+<b>10.3</b>	Calculate, P<sub>L</sub> = n/L, number of intersections per unit length.<br><br>
+<b>10.4</b>	Obtain average value of P<sub>L</sub>, <P<sub>L</sub>>.<br><br>
+<b>10.5</b>	Average diameter of particles is given by:<br><br>
 <image src="images/Picture5.png"><br>
 n = number of intersections<br>
 L = Total length of all the horizontal lines<br><br>

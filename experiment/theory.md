@@ -1,6 +1,6 @@
 <b>1</b> Stereology is an important tool used for the geometrical characterization of microstructures. This microstructural characterization means geometrical characterization such as volume fraction of second phase, particle size distribution, size distribution of grains, density of dislocations. Microstructures evolves due to processing done in the material which in turn governs the properties of the materials and therefore characterization of microstructure is an important aspect of materials science. The term stereology dates to 1960’s and it relates the 2-D images of the microstructures with the 3-D images and structures. In stereology, geometrical features of the structure of the material are quantified using various types of methods. Many mathematical tools are used to transform the 2D measurements made on a planar microstructure to 3D parameters of the structure of the solids. Elements of microstructures:<br>
 
-<b>2 Typical microstructural elements:</b><br>
+<b>2 Typical microstructural elements:</b><br><br>
 <b>2.1</b>	3-D particles<br>
 <b>2.2</b> 2-D surface or interfaces between particles and grains.<br>
 <b>2.3</b>	1-D linear features such as dislocations, fibres, grain edges etc.,.<br>
@@ -10,15 +10,15 @@ In materials science we deal with the opaque materials, and so we take a section
 <b>Figure 1.</b> Section cuts of 3-D images on a 2-D plane.<br><br>
 Another way to represent the images is by producing a projected image and its representation is possible if our material remains transparent to light. Then lines will be projected as lines, surfaces will be projected as area projections and will be forming a projected image. Both 2-D images can be quantified and related to the 3-D structure but stereology behind them functions differently.<br>
 
-<b>3 Tools to observe the microstructures:</b><br>
-<b>3.1</b>	 Optical microstructures are studied using the Reflected Light Microscopes (Metallurgical microscopes) for opaque materials.<br>
-<b>3.2</b>	 Transmitted light microscopes are used for observing the microstructures of the transparent materials.<br> 
+<b>3 Tools to observe the microstructures:</b><br><br>
+<b>3.1</b>	 Optical microstructures are studied using the Reflected Light Microscopes (Metallurgical microscopes) for opaque materials.<br><br>
+<b>3.2</b>	 Transmitted light microscopes are used for observing the microstructures of the transparent materials.<br><br> 
 <b>3.3</b>  Electron microscopes are used with higher resolutions to observe the images for obtaining greater details and understand its features in the microstructures. Among these microscopes, most common are Scanning Electron Microscopes (SEM) which shows secondary and back scattered electron images, Transmission Electron Microscopes (TEM) which shows projected images, X-ray map images, and Scanning Tunnelling Microscopes (STM). Stereology has the power to quantify the true interlamellar spacing of the pearlite.<br> <br>
 
-<b>4 Important concepts of Stereology:</b><br>
+<b>4 Important concepts of Stereology:</b><br><br>
 <b>4.1  Sectioning or sampling:</b> Stereology involves sampling in a systematic random way to ensure unbiased representation of the entire structure to be studied. Sectioning involves random sampling of the 3-D block using 2-D plane. Selection of the sample is done randomly and unbiasedly towards any specific regions of interest. <br><br>
 <b>4.2  Sampling probes:</b> These are the basic measurements units used for the microstructural assessments and studies. It can be represented using different shapes such as points, lines, areas, or volumes, depending on the specific stereological method and property of interest. To bring the accuracy to obtained results, proper probe selection is of utmost importance. Section can be done using these lines and probes and it is also known as sampling of materials or sampling by probes of various dimensions. If we section a 2-D system then probe should be 2-D, section with line means a 1-D probe, and sectioning using a point means a 0-D probe.<br> <br>
-<b>5 Structures are sectioned and sampled using different probes.</b><br> 
+<b>5 Structures are sectioned and sampled using different probes.</b><br><br> 
 <b>5.1	Sampling using 2-D Probe (Plane probe):</b> Intersection of a plane with the structure. 3-D structure intersects using planes. After sectioning, line appears at the sections of surfaces, points appear at the planes where the lines were present in 3-D structure and area elements and section profiles appears at the places where particles are present in 3-D materials.<br><br> 
 <b>5.2	Sampling by 1-D Probe or Line:</b> If we put grids of lines along horizontal and vertical directions on the 2-D probe then it is known as sampling by 1-D probe or line probe which intersection of a line with the structure. One can check for the intersections line makes with the surface features. <br><br>
 <b>5.3 Sampling using 0-D Probe (Point Probe): </b>Intersection of point with structure. We are interested to look how many points are intersecting with the particles.<br> 
@@ -52,7 +52,7 @@ Stereology is built on the concept of geometrical probability. So, if there are 
 <b>Figure 2.</b> Microstructures sectioned with both horizontal and vertical grids.<br>
 
 Structures coming from spherical particles in 3-D. Structures are coming from the spherical particles in 3-D. If we want to calculate area fraction of the particles. i.e., total area fraction of the particles in a unit area of image. Since microstructures vary in statistical manner so we want to use stereology for this calculation. <br><br>
-<b>Concept:</b><br> 
+<b>Concept:</b><br><br> 
 <b>9.1</b>	Put grid of points on the given microstructure. Now, count the total number of points and then count the total number of points lying inside the circular particles. <br><br>
 <b>9.2</b>	Now, measure the point fraction (P<sub>P</sub>)<br>
 <image src="images/Picture3.png"><br>
@@ -62,7 +62,7 @@ where, n = Total number of points intersecting the particles<br>
 
 <b><centre>10 Method 2:</centre></b><br>
 <image src="images/Picture4.png"><br>
-<b>Figure 3.</b> Microstructures sectioned with the horizontal grids.<br>
+<b>Figure 3.</b> Microstructures sectioned with the horizontal grids.<br><br>
 <b>10.1</b>	Here we will only have particle boundaries and we will draw horizontal gridlines over the microstructures.<br><br>
 <b>10.2</b>	Count the number of intersections with the particle boundaries.<br><br>
 <b>10.3</b>	Calculate, P<sub>L</sub> = n/L, number of intersections per unit length.<br><br>

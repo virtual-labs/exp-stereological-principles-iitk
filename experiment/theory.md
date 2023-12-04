@@ -37,46 +37,46 @@ Use of all the probes mentioned above plays a key role to understand the structu
 </centre>
 
 Stereology is built on the concept of geometrical probability. So, if there are large number of particles and there is a plane probe which cuts the structure, not all particles will get cut and only some of them will be cut. How many of them will be cut will depend on the probability of the plane probe intersecting the particles.<br> <br>
-<b>5 Estimation:</b> Stereological equations and mathematical models are employed to estimate the properties of interest, such as volume, surface area, length, or number of objects. These estimations are based on the data collected from the samples. <br>
+<b>6 Estimation:</b> Stereological equations and mathematical models are employed to estimate the properties of interest, such as volume, surface area, length, or number of objects. These estimations are based on the data collected from the samples. <br>
 
-<b>6 Important consequences:</b> <br> 
-<b>6.1</b>	Probe is of a lower dimension than the structure and leads to loss of information (e.g., shape). So, during analysis sometimes we use assumed shapes.<br> 
-<b>6.2</b>	Stereological methods are statistical in nature. One obtains average value and are subjected to statistical errors.<br>  
-<b>6.3</b>	Stereological methods are based on mathematical rigour and based on probability and statistics.<br>  
-<b>7 Methods of Stereology</b> <br><br>
-<b>7.1	Point Counting:</b> In point counting, a grid with regularly spaced points is superimposed on a sample microstructure, and the number of points falling within the region of interest is counted. This method is commonly used for the estimation of volume fractions and particle densities.<br> <br>
-<b>7.2	Line Intercept Method:</b> The line intercept method involves the placement of lines randomly onto the sample microstructure followed by counting the total number of times line intersects the structure of interest. This is the most common method used to estimate the length and surface area.<br> 
-<b>7.3	Area Fraction Method:</b> This method estimates the volume fraction of the structures within a 2-D plane. It involves the count of total intersection points of the structures with a grid of points or lines.<br> <br>
-<b>8 Method 1:</b><br>
+<b>7 Important consequences:</b> <br> 
+<b>7.1</b>	Probe is of a lower dimension than the structure and leads to loss of information (e.g., shape). So, during analysis sometimes we use assumed shapes.<br> 
+<b>7.2</b>	Stereological methods are statistical in nature. One obtains average value and are subjected to statistical errors.<br>  
+<b>7.3</b>	Stereological methods are based on mathematical rigour and based on probability and statistics.<br>  
+<b>8 Methods of Stereology</b> <br><br>
+<b>8.1	Point Counting:</b> In point counting, a grid with regularly spaced points is superimposed on a sample microstructure, and the number of points falling within the region of interest is counted. This method is commonly used for the estimation of volume fractions and particle densities.<br> <br>
+<b>8.2	Line Intercept Method:</b> The line intercept method involves the placement of lines randomly onto the sample microstructure followed by counting the total number of times line intersects the structure of interest. This is the most common method used to estimate the length and surface area.<br> 
+<b>8.3	Area Fraction Method:</b> This method estimates the volume fraction of the structures within a 2-D plane. It involves the count of total intersection points of the structures with a grid of points or lines.<br> <br>
+<b>9 Method 1:</b><br>
 <image src="images/Picture2.png"><br>
 <b>Figure 2.</b> Microstructures sectioned with both horizontal and vertical grids.<br>
 
 Structures coming from spherical particles in 3-D. Structures are coming from the spherical particles in 3-D. If we want to calculate area fraction of the particles. i.e., total area fraction of the particles in a unit area of image. Since microstructures vary in statistical manner so we want to use stereology for this calculation. <br>
 Concept:<br> 
-<b>8.1</b>	Put grid of points on the given microstructure. Now, count the total number of points and then count the total number of points lying inside the circular particles. <br>
-<b>8.2</b>	Now, measure the point fraction (P<sub>P</sub>)<br>
+<b>9.1</b>	Put grid of points on the given microstructure. Now, count the total number of points and then count the total number of points lying inside the circular particles. <br>
+<b>9.2</b>	Now, measure the point fraction (P<sub>P</sub>)<br>
 <image src="images/Picture3.png"><br>
 where, n = Total number of points intersecting the particles<br>
 <centre>N = Total number of points present in the grid </centre><br>
-<b>8.3</b>	Now, calculate the point fraction from each of the three microstructures. The average value, <P<sub>P</sub>> is an estimate of area fraction: A<sub>A</sub> = <P<sub>P</sub>>. We will get this value with a statistical or random error associated with it.<br>
+<b>9.3</b>	Now, calculate the point fraction from each of the three microstructures. The average value, <P<sub>P</sub>> is an estimate of area fraction: A<sub>A</sub> = <P<sub>P</sub>>. We will get this value with a statistical or random error associated with it.<br>
 
-<b><centre>9 Method 2:</centre></b><br>
+<b><centre>10 Method 2:</centre></b><br>
 <image src="images/Picture4.png"><br>
 <b>Figure 3.</b> Microstructures sectioned with the horizontal grids.<br>
-<b>9.1</b>	Here we will only have particle boundaries and we will draw horizontal gridlines over the microstructures.<br>
-<b>9.2</b>	Count the number of intersections with the particle boundaries.<br>
-<b>9.3</b>	Calculate, P<sub>L</sub> = n/L, number of intersections per unit length.<br>
-<b>9.4</b>	Obtain average value of P<sub>L</sub>, <P<sub>L</sub>>.<br>
-<b>9.5</b>	Average diameter of particles is given by:<br>
+<b>10.1</b>	Here we will only have particle boundaries and we will draw horizontal gridlines over the microstructures.<br>
+<b>10.2</b>	Count the number of intersections with the particle boundaries.<br>
+<b>10.3</b>	Calculate, P<sub>L</sub> = n/L, number of intersections per unit length.<br>
+<b>10.4</b>	Obtain average value of P<sub>L</sub>, <P<sub>L</sub>>.<br>
+<b>10.5</b>	Average diameter of particles is given by:<br>
 <image src="images/Picture5.png"><br>
 n = number of intersections<br>
 L = Total length of all the horizontal lines<br><br>
-<b>10 Applications of Stereology</b><br><br>
-<b>10.1	Biological Sciences:</b> Cells, tissues, organs, and neural networks are studied with greater details with the help of stereology.<br><br>
-<b>10.2	Materials Science:</b> Microstructural analysis, grain size calculations, fiber orientations, porosity, are studied using the concepts of stereology for different metallic and materials systems and extremely helpful in the quality control of the material design.<br><br> 
-<b>10.3	Geology:</b> Geological sample properties such as rock microstructures, textures, grain sizes and porosities are studied using the stereology.<br><br>
-<b>10.4	Medicine and Healthcare:</b> Stereology helps to study about the tissues in greater details by providing details regarding volume and structural distributions of different substances inside the tissues to help study about different types of diseases and find their cure and treatment.<br>  
-<b>10.5	Challenges and Advances:</b> Unbiased sampling, handling of complex geometries, and dealing with the larger data sets are some of the key challenges for application of stereology to study the microstructures in proper depth. However, the recent advances in the fields of computational materials science and evolution of Artificial Intelligence and Machine Learning tools are the key solutions to tackle the problems that are associated with the advancement of the stereology in the field of materials science. 
+<b>11 Applications of Stereology</b><br><br>
+<b>11.1	Biological Sciences:</b> Cells, tissues, organs, and neural networks are studied with greater details with the help of stereology.<br><br>
+<b>11.2	Materials Science:</b> Microstructural analysis, grain size calculations, fiber orientations, porosity, are studied using the concepts of stereology for different metallic and materials systems and extremely helpful in the quality control of the material design.<br><br> 
+<b>11.3	Geology:</b> Geological sample properties such as rock microstructures, textures, grain sizes and porosities are studied using the stereology.<br><br>
+<b>11.4	Medicine and Healthcare:</b> Stereology helps to study about the tissues in greater details by providing details regarding volume and structural distributions of different substances inside the tissues to help study about different types of diseases and find their cure and treatment.<br>  
+<b>11.5	Challenges and Advances:</b> Unbiased sampling, handling of complex geometries, and dealing with the larger data sets are some of the key challenges for application of stereology to study the microstructures in proper depth. However, the recent advances in the fields of computational materials science and evolution of Artificial Intelligence and Machine Learning tools are the key solutions to tackle the problems that are associated with the advancement of the stereology in the field of materials science. 
 
 
 

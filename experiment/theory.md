@@ -3,7 +3,7 @@
 <b>2 Typical microstructural elements:</b><br>
 <b>2.1</b>	3-D particles<br>
 <b>2.2</b> 2-D surface or interfaces between particles and grains.<br>
-<b>2.3</b>	1-D linear features such as dislocations, fibres, grain edges etc.,.<br>
+<b>2.3</b>	1-D linear features such as dislocations, fibres, grain edges etc.,<br>
 
 In materials science we deal with the opaque materials, and so we take a section of the material then polish it, etch it, and put it under a microscope to observe its features. It is important to mention here that the section cuts of lines will give points. Section cuts of surfaces will give lines, and section cuts of 3-D will give 2-D surfaces as shown in the Figure 1:<br>
 <image src="images/Picture1.png"><br><br>

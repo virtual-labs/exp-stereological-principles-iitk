@@ -41,9 +41,9 @@ Stereology is built on the concept of geometrical probability. So, if there are 
 
 <b>7 Important consequences:</b> <br> 
 <b>7.1</b>	Probe is of a lower dimension than the structure and leads to loss of information (e.g., shape). So, during analysis sometimes we use assumed shapes.<br>  
-<b>7.2</b>	Stereological methods are statistical in nature. One obtains average value and are subjected to statistical errors.<br><br>  
+<b>7.2</b>	Stereological methods are statistical in nature. One obtains average value and are subjected to statistical errors.<br>  
 <b>7.3</b>	Stereological methods are based on mathematical rigour and based on probability and statistics.<br>  
-<b>8 Methods of Stereology</b> <br>
+<b>8 Methods of Stereology</b><br>
 <b>8.1	Point Counting:</b> In point counting, a grid with regularly spaced points is superimposed on a sample microstructure, and the number of points falling within the region of interest is counted. This method is commonly used for the estimation of volume fractions and particle densities.<br> <br>
 <b>8.2	Line Intercept Method:</b> The line intercept method involves the placement of lines randomly onto the sample microstructure followed by counting the total number of times line intersects the structure of interest. This is the most common method used to estimate the length and surface area.<br> <br>
 <b>8.3	Area Fraction Method:</b> This method estimates the volume fraction of the structures within a 2-D plane. It involves the count of total intersection points of the structures with a grid of points or lines.<br> <br>

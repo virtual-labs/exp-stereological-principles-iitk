@@ -7,7 +7,7 @@
 
 In materials science we deal with the opaque materials, and so we take a section of the material then polish it, etch it, and put it under a microscope to observe its features. It is important to mention here that the section cuts of lines will give points. Section cuts of surfaces will give lines, and section cuts of 3-D will give 2-D surfaces as shown in the Figure 1:<br>
 <center><image src="images/Picture1.png"></image></center><br><br>
-<b>Figure 1.</b> Section cuts of 3-D images on a 2-D plane.<br><br>
+<center><b>Figure 1.</b> Section cuts of 3-D images on a 2-D plane.</center><br><br>
 Another way to represent the images is by producing a projected image and its representation is possible if our material remains transparent to light. Then lines will be projected as lines, surfaces will be projected as area projections and will be forming a projected image. Both 2-D images can be quantified and related to the 3-D structure but stereology behind them functions differently.<br>
 
 <b>3 Tools to observe the microstructures:</b><br>
@@ -49,7 +49,7 @@ Stereology is built on the concept of geometrical probability. So, if there are 
 <b>8.3	Area Fraction Method:</b> This method estimates the volume fraction of the structures within a 2-D plane. It involves the count of total intersection points of the structures with a grid of points or lines.<br> <br>
 <b>9 Method 1:</b><br>
 <center><image src="images/Picture2.png"></image></center><br>
-<b>Figure 2.</b> Microstructures sectioned with both horizontal and vertical grids.<br>
+<center><b>Figure 2.</b> Microstructures sectioned with both horizontal and vertical grids.</center><br><br>
 
 Structures coming from spherical particles in 3-D. Structures are coming from the spherical particles in 3-D. If we want to calculate area fraction of the particles. i.e., total area fraction of the particles in a unit area of image. Since microstructures vary in statistical manner so we want to use stereology for this calculation. <br><br>
 <b>Concept:</b><br> 
@@ -62,7 +62,7 @@ where, n = Total number of points intersecting the particles<br>
 
 <b><centre>10 Method 2:</centre></b><br>
 <center><image src="images/Picture4.png"></image></center><br>
-<b>Figure 3.</b> Microstructures sectioned with the horizontal grids.<br><br>
+<center><b>Figure 3.</b> Microstructures sectioned with the horizontal grids.</center><br><br>
 <b>10.1</b>	Here we will only have particle boundaries and we will draw horizontal gridlines over the microstructures.<br><br>
 <b>10.2</b>	Count the number of intersections with the particle boundaries.<br><br>
 <b>10.3</b>	Calculate, P<sub>L</sub> = n/L, number of intersections per unit length.<br><br>

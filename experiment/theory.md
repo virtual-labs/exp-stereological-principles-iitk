@@ -8,7 +8,7 @@
 In materials science we deal with the opaque materials, and so we take a section of the material then polish it, etch it, and put it under a microscope to observe its features. It is important to mention here that the section cuts of lines will give points. Section cuts of surfaces will give lines, and section cuts of 3-D will give 2-D surfaces as shown in the Figure 1:<br>
 <center><image src="images/Picture1.png"></image></center><br><br>
 <center><b>Figure 1.</b> Section cuts of 3-D images on a 2-D plane.</center><br><br>
-Another way to represent the images is by producing a projected image and its representation is possible if our material remains transparent to light. Then lines will be projected as lines, surfaces will be projected as area projections and will be forming a projected image. Both 2-D images can be quantified and related to the 3-D structure but stereology behind them functions differently.<br>
+Another way to represent the images is by producing a projected image and its representation is possible if our material remains transparent to light. Then lines will be projected as lines, surfaces will be projected as area projections and will be forming a projected image. Both 2-D images can be quantified and related to the 3-D structure but stereology behind them functions differently.<br><br>
 
 <b>3 Tools to observe the microstructures:</b><br>
 <b>3.1</b>	 Optical microstructures are studied using the Reflected Light Microscopes (Metallurgical microscopes) for opaque materials.<br><br>

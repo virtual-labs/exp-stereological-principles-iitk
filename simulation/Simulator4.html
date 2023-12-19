@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Simulator 4</title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .text {
+            background-color: yellow;
+            border-radius: 21px;
+            font-size: 22px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 5px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .object {
+            margin: 15px;
+            margin: 15px;
+            width: 100%;
+            height: auto;
+        }
+
+        #result {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 20px;
+            margin: 5px;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" class="btn btn-outline-info mx-2 my-2"><a href="index.html"> Go to main page</a></button>
+    <button type="button" class="btn btn-outline-info m-3"><a href="Simulator3.html">Back</a></button>
+    <h2 class="d-flex justify-content-center align-items-center"> Simulator 4</h2>
+    <p class="d-flex justify-content-center align-items-center text"> Find the correct projections for use of different
+        probes in a 3-D object shown below</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-container">
+                    <!-- question -->
+                    <img class="object " id="pointprobe" src="./images/1.JPG" alt="" />
+                    <img class="object " id="lineprobe" src="./images/2.JPG" alt="" style="display: none;" />
+                    <img class="object " id="planeprobe" src="./images/3.JPG" alt="" style="display: none;" />
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <!-- answers -->
+                <div class="image-container">
+                    <img class="object " id="line" src="./images/sim3-line.png" alt=""
+                        onclick="handleImageClick(this)" />
+                    <img class="object " id="point" src="./images/sim3-point.png" alt=""
+                        onclick="handleImageClick(this)" />
+                    <img class="object" id="plane" src="./images/sim3-plane.png" alt=""
+                        onclick="handleImageClick(this)" />
+                </div>
+                <p id="result"> </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Array of sample ids in the order they should appear
+        const objectsId = ["pointprobe", "lineprobe", "planeprobe"];
+        const correctOption = ["point", "line", "plane"];
+
+        var currentObjectIndex = 0;
+        var resultElement = document.getElementById("result");
+        var selectedObject = objectsId[currentObjectIndex];
+
+        function handleImageClick(image) {
+            var selectedImage = image.id;
+
+            var isCorrect = checkIfCorrectEtching(selectedImage);
+
+            // Show result
+
+            if (isCorrect) {
+                resultElement.textContent = "Good Job !";
+                resultElement.style.color = "green";
+                setTimeout(() => {
+                    // Clear the result message after a delay
+                    resultElement.textContent = "";
+                    // Automatically move to the next sample
+                    moveToNextObject();
+                }, 2000);
+            } else {
+                resultElement.textContent = "Incorrect . Please choose the correct.";
+                resultElement.style.color = "red";
+            }
+
+        }
+
+        function checkIfCorrectEtching(selectedImage) {
+            // Check if the selected etchant matches the expected etchant for the current sample
+            return selectedImage === correctOption[currentObjectIndex];
+        }
+
+        function moveToNextObject() {
+            // Increment the object index
+            currentObjectIndex++;
+
+            // Check if there are more objects
+            if (currentObjectIndex < objectsId.length) {
+                // hide the previous image which has been answered
+                document.getElementById(objectsId[currentObjectIndex - 1]).style.display = "none";
+                // show the next image
+                document.getElementById(objectsId[currentObjectIndex]).style.display = "block";
+            } else {
+                // Display completion message without hiding the last image
+                resultElement.textContent = "You have completed successfully.";
+                resultElement.style.color = "green";
+            }
+        }
+    </script>
+</body>
+
+</html>

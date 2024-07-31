@@ -95,3 +95,5 @@ This method estimates the volume fraction of the structures within a 2-D plane. 
 <b>9.3	Geology</b><br> Geological sample properties such as rock microstructures, textures, grain sizes and porosities are studied using stereology.<br><br>
 <b>9.4	Medicine and Healthcare</b><br> Stereology helps to study the tissues in greater detail by providing information regarding the volume and structural distributions of different substances inside the tissues. It also helps in the study of different types of diseases and in finding their cure and treatments.<br><br>  
 <b>9.5	Challenges and Advances</b><br> Unbiased sampling, handling of complex geometries, and dealing with larger data sets are some of the key challenges for the application of stereology to study the microstructures in proper depth. However, the recent advances in the fields of computational materials science and evolution of Artificial Intelligence and Machine Learning tools are the highly effective in tackling the problems that are associated with the advancement of stereology in the field of materials science.
+
+

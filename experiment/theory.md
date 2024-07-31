@@ -1,9 +1,4 @@
-Stereology is an important tool used for the geometrical characterization of microstructures. This microstructural characterization means geometrical characterization such as volume fraction of second phase, particle size distribution, size distribution of grains, density of dislocations. Microstructures evolves due to processing done in the material which in turn governs the properties of the materials and therefore characterization of microstructure is an important aspect of materials science. The term stereology dates to 1960’s and it relates the 2-D images of the microstructures with the 3-D images and structures. In stereology, geometrical features of the structure of the material are quantified using various types of methods. Many mathematical tools are used to transform the 2D measurements made on a planar microstructure to 3D parameters of the structure of the solids. Elements of microstructures:<br>
-Typical microstructural elements:<br>
-1.	3-D particles<br>
-2.	2-D surface or interfaces between particles and grains.<br>
-3.	1-D linear features such as dislocations, fibres, grain edges etc.,.<br>
-In materials science we deal with the opaque materials, and so we take a section of the material then polish it, etch it, and put it under a microscope to observe its featu<b>1. Introduction </b> <br> 
+<b>1. Introduction </b> <br> 
 Stereology is an important tool used for the geometrical characterization of microstructures. This microstructural characterization refers to the geometrical characterization such as volume fraction of second phase, particle size distribution, size distribution of grains, and density of dislocations. Microstructures evolve due to processing done on the material, which in turn governs the properties of the materials. Therefore, the characterization of microstructure is an important aspect of materials science. The term stereology dates to 1960’s and it relates the 2-D images of the microstructures with the 3-D images and structures. In stereology, geometrical features of the structure of the material are quantified using various types of methods. Many mathematical tools are used to transform the 2D measurements made on a planar microstructure to 3D parameters of the structure of the solids. <br>
 
 <b>2. Typical Microstructural Elements</b><br>
@@ -100,12 +95,3 @@ This method estimates the volume fraction of the structures within a 2-D plane. 
 <b>9.3	Geology</b><br> Geological sample properties such as rock microstructures, textures, grain sizes and porosities are studied using stereology.<br><br>
 <b>9.4	Medicine and Healthcare</b><br> Stereology helps to study the tissues in greater detail by providing information regarding the volume and structural distributions of different substances inside the tissues. It also helps in the study of different types of diseases and in finding their cure and treatments.<br><br>  
 <b>9.5	Challenges and Advances</b><br> Unbiased sampling, handling of complex geometries, and dealing with larger data sets are some of the key challenges for the application of stereology to study the microstructures in proper depth. However, the recent advances in the fields of computational materials science and evolution of Artificial Intelligence and Machine Learning tools are the highly effective in tackling the problems that are associated with the advancement of stereology in the field of materials science.
-
-
-
-
-
-
-
-
-

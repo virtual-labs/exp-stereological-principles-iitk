@@ -1,1 +1,1 @@
-Stereological principles for quantitative metallography and digital image processing and microstructural analysis. 
+To study and apply the stereological principles for quantitative metallography, digital image processing and microstructural analysis. 

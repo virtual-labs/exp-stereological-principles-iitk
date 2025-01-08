@@ -14,7 +14,7 @@ Another way to represent the images is by producing a projected image and its re
 
 <b>3 Tools to observe the microstructures</b><br>
 *	 Optical microstructures are studied using the Reflected Light Microscopes (Metallurgical microscopes) for opaque materials.<br><br>
-*	 Transmitted light microscopes are used for observing the microstructures of the transparent materials.<br><br> 
+*	 Transmitted light microscopes are used for observing the microstructures of the transparent materials.<br><br>
 *  Electron microscopes are used with higher resolutions to observe the images to obtain greater details and understand its features in the microstructures. Among these microscopes, most common are Scanning Electron Microscopes (SEM) which shows secondary and back scattered electron images, Transmission Electron Microscopes (TEM) which shows projected images, X-ray map images, and Scanning Tunnelling Microscopes (STM). Stereology has the power to quantify the true interlamellar spacing of the pearlite.<br> <br>
 
 <b>4 Important concepts of Stereology</b><br>

@@ -13,8 +13,8 @@ In materials science, we deal with the opaque materials, and so we take a sectio
 Another way to represent the images is by producing a projected image and its representation is possible if our material remains transparent to light. Then lines will be projected as lines, surfaces will be projected as area projections, and will form a projected image. Both 2-D images can be quantified and related to the 3-D structure but the stereology behind them functions differently.<br><br>
 
 <b>3 Tools to observe the microstructures</b><br>
-*	 Optical microstructures are studied using the Reflected Light Microscopes (Metallurgical microscopes) for opaque materials.<br><br>
-*	 Transmitted light microscopes are used for observing the microstructures of the transparent materials.<br><br>
+*  Optical microstructures are studied using the Reflected Light Microscopes (Metallurgical microscopes) for opaque materials.<br> <br>
+*  Transmitted light microscopes are used for observing the microstructures of the transparent materials.<br> <br>
 *  Electron microscopes are used with higher resolutions to observe the images to obtain greater details and understand its features in the microstructures. Among these microscopes, most common are Scanning Electron Microscopes (SEM) which shows secondary and back scattered electron images, Transmission Electron Microscopes (TEM) which shows projected images, X-ray map images, and Scanning Tunnelling Microscopes (STM). Stereology has the power to quantify the true interlamellar spacing of the pearlite.<br> <br>
 
 <b>4 Important concepts of Stereology</b><br>

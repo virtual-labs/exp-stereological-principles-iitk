@@ -96,19 +96,19 @@
         <div class="row">
             <span class="main-title">3D Shapes </span>
             <div class="col-md-2 ">
-                <img class="polishing-paper" id="3d1" src="./images/sim2-3d1.png" alt="" />
+                <img class="polishing-paper" id="cone" src="./images/sim2-3d1.png" alt="" />
             </div>
             <div class="col-md-2 ">
-                <img class="polishing-paper" id="3d2" src="./images/sim2-3d2.png" alt="" />
+                <img class="polishing-paper" id="cube" src="./images/sim2-3d2.png" alt="" />
             </div>
             <div class="col-md-2 ">
-                <img class="polishing-paper" id="3d3" src="./images/sim2-3d3.png" alt="" />
+                <img class="polishing-paper" id="pyramid" src="./images/sim2-3d3.png" alt="" />
             </div>
             <div class="col-md-2 ">
-                <img class="polishing-paper" id="3d4" src="./images/sim2-3d4.png" alt="" />
+                <img class="polishing-paper" id="cylinder" src="./images/sim2-3d4.png" alt="" />
             </div>
             <div class="col-md-2 ">
-                <img class="polishing-paper" id="3d5" src="./images/sim2-3d5.png" alt="" />
+                <img class="polishing-paper" id="cuboid" src="./images/sim2-3d5.png" alt="" />
             </div>
 
         </div>
@@ -123,7 +123,7 @@
             </div>
 
             <div class="col-md-3  ">
-                <img class="microstructure-images" id="trectangle-width" src="./images/rectange-width.png" alt="" />
+                <img class="microstructure-images" id="thorizontal" src="./images/rectange-width.png" alt="" />
             </div>
 
 
@@ -139,18 +139,13 @@
                 <img class="sample-rotation" id="square" src="./images/square.png" alt="" />
             </div>
             <div class="col-md-3   ">
-                <img class="sample-rotation" id="rectangle-long" src="./images/rectangle-long.png" alt="" />
+                <img class="sample-rotation" id="svertical" src="./images/rectangle-long.png" alt="" />
             </div>
             <div class="col-md-3  ">
-                <img class="microstructure-images" id="rectangle-width" src="./images/rectange-width.png" alt="" />
+                <img class="sample-rotation" id="shorizontal" src="./images/rectange-width.png" alt="" />
             </div>
         </div>
     </div>
-
-
-
-
-
 
 
     <!-- Modal for Complete -->
@@ -231,152 +226,106 @@
 
     <script>
 
-        const correctMatches = {
-            '3d1': { microstructure: 'tcircle', sample: 'triangle' },
-            '3d2': { microstructure: 'tsquare', sample: 'rectangle-width' },
-            '3d3': { microstructure: 'tsquare', sample: 'triangle' },
-            '3d4': { microstructure: 'tcircle', sample: 'rectangle-width' },
-            '3d5': { microstructure: 'trectangle-width', sample: 'rectangle-width' }
-        };
 
-        // Define your typeOrder array based on your requirements
-        const typeOrder = ['3d1', '3d2', '3d3', '3d4', '3d5'];
+const correctMatches = {
+    'cone': { microstructure: 'tcircle', sample: 'triangle' },
+    'cube': { microstructure: 'tsquare', sample: 'shorizontal' },
+    'pyramid': { microstructure: 'tsquare', sample: 'triangle' },
+    'cylinder': { microstructure: 'tcircle', sample: 'svertical' },
+    'cuboid': { microstructure: 'thorizontal', sample: 'shorizontal' }
+};
 
-        const polishingPaperName = document.querySelectorAll('.polishing-paper');
-        const microstructureImages = document.querySelectorAll('.microstructure-images');
-        const sampleRotationName = document.querySelectorAll('.sample-rotation');
+const typeOrder = ['cone', 'cube', 'pyramid', 'cylinder', 'cuboid'];
 
-        let correctlyMatchedPolishPaper = 0; // Initialize a variable to track correctly matched polishing paper
-        let currentPaperIndex = 0;
-        let selectedPaper = 180;
-        let selectedMicrostructure = null;
-        let selectedSampleRotation = null;
+const polishingPaperName = document.querySelectorAll('.polishing-paper');
+const images = document.querySelectorAll('img');
+let currentPaperIndex = 0;
+let selectedPaper = null;
+let selectedMicrostructure = null;
+let selectedSampleRotation = null;
 
-
-
-        function disablePolishingPapers() {
-            polishingPaperName.forEach(name => {
-                if (name.id !== selectedPaper) {
-                    name.classList.add('disabled');
-                }
-            });
+function resetStyles(keepCurrentPaper = true) {
+    // Reset all paper highlights except the current one if required
+    polishingPaperName.forEach((name, index) => {
+        if (keepCurrentPaper && index === currentPaperIndex) {
+            name.classList.add('selected');
+        } else {
+            name.classList.remove('selected');
         }
+    });
 
-        function enablePolishingPapers() {
-            polishingPaperName.forEach(name => {
-                name.classList.remove('disabled');
-            });
+    // Reset all image highlights
+    images.forEach(image => image.classList.remove('highlighted-img'));
+}
+
+function moveToNextMaterial() {
+    currentPaperIndex++;
+    if (currentPaperIndex < typeOrder.length) {
+        resetStyles(); // Reset previous styles and highlight the next paper
+        selectedMicrostructure = null;
+        selectedSampleRotation = null;
+
+        const nextPaper = document.getElementById(typeOrder[currentPaperIndex]);
+        if (nextPaper) {
+            nextPaper.classList.add('selected'); // Highlight the next paper
+            selectedPaper = nextPaper.id;
         }
+    } else {
+        $('#quizCompletedModal').modal('show'); // Show completion modal
+    }
+}
 
-        // Add click event listeners to all the polishing paper
-        polishingPaperName.forEach(button => {
-            button.addEventListener('click', () => {
-                if (!button.classList.contains('disabled')) {
-                    selectedPaper = button.id;
-                    resetStyles();
-                    button.classList.add('selected');
-                    disablePolishingPapers();
-                }
-            });
-        });
-
-        function resetImagesStyles() {
-            const images = document.querySelectorAll('img.highlighted-img');
-            images.forEach(image => {
-                image.classList.remove('highlighted-img');
-            });
+// Event listener for polishing paper selection
+polishingPaperName.forEach(paper => {
+    paper.addEventListener('click', () => {
+        if (selectedPaper !== paper.id) {
+            resetStyles(false); // Reset but keep the current paper if switching
+            paper.classList.add('selected');
+            selectedPaper = paper.id;
         }
+    });
+});
 
-        function resetStyles() {
-            polishingPaperName.forEach(name => name.classList.remove('highlight'));
-            microstructureImages.forEach(image => image.classList.remove('highlight'));
-            sampleRotationName.forEach(image => image.classList.remove('highlight'));
-        }
+// Event listener for image selection
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        if (selectedPaper) {
+            if (!selectedMicrostructure) {
+                selectedMicrostructure = image.id;
+                image.classList.add('highlighted-img');
+            } else if (!selectedSampleRotation) {
+                selectedSampleRotation = image.id;
+                image.classList.add('highlighted-img');
 
-        function moveToNextMaterial() {
-            resetImagesStyles() // resete previous image style 
-            if (currentPaperIndex < typeOrder.length) {
-                const nextMaterialButton = document.getElementById(typeOrder[currentPaperIndex]);
-                nextMaterialButton.click();
-                nextMaterialButton.classList.add('selected');
-            } else {
-                // Check if all materials have been matched correctly
-                if (correctlyMatchedPolishPaper === 6) {
-                    // All types completed, show a completion modal
-                    $('#quizCompletedModal').modal('show');
-                }
-            }
-        }
-
-        // Automatically select the first type polishing paer and highlight it on page load
-        window.addEventListener('load', () => {
-            const firstPaperName = document.getElementById(typeOrder[0].toLowerCase());
-            if (firstPaperName) {
-                firstPaperName.click();
-                firstPaperName.classList.add('selected');
-            }
-        });
-
-
-
-
-        // Add click event listeners to the microstructure and sample images
-        const images = document.querySelectorAll('img');
-        images.forEach(image => {
-            image.addEventListener('click', () => {
-                if (selectedPaper !== null) {
-                    if (!selectedMicrostructure) {
-                        selectedMicrostructure = image.id;
-                        image.classList.add('highlighted-img');  // adding microstructure image style 
-                    } else if (!selectedSampleRotation) {
-                        selectedSampleRotation = image.id;
-                        image.classList.add('highlighted-img');  // adding sample image style 
-
-                        console.log("selected paper=", selectedPaper)
-                        console.log("selectedMicrostructure =", selectedMicrostructure)
-                        console.log("selectedSampleRotation =", selectedSampleRotation)
-
-                        console.log("correct microstructure =", correctMatches[selectedPaper].microstructure)
-                        console.log("  correct paper sample =", correctMatches[selectedPaper].sample)
-
-                        if (
-                            selectedMicrostructure === correctMatches[selectedPaper].microstructure &&
-                            selectedSampleRotation === correctMatches[selectedPaper].sample
-                        ) {
-                            correctlyMatchedPolishPaper++; // Increment correctly matched materials
-
-                            // Check if the current type is the last type
-                            if (currentPaperIndex === typeOrder.length - 1) {
-                                // All types completed, show a completion modal
-                                $('#quizCompletedModal').modal('show');
-                            } else {
-                                // Show the "Correct Match" modal for non-last types
-                                $('#correctMatchModal').modal('show');
-                                currentPaperIndex++;
-                                moveToNextMaterial();
-                            }
-                        } else {
-                            console.log("ELSE BLOCK selected paper=", selectedPaper)
-                            console.log("ELSE BLOCK selectedMicrostructure =", selectedMicrostructure)
-                            console.log("ELSE BLOCK selectedSampleRotation =", selectedSampleRotation)
-
-                            console.log("ELSE BLOCK  correct microstructure =", correctMatches[selectedPaper].microstructure)
-                            console.log("ELSE BLOCK  correct paper sample =", correctMatches[selectedPaper].sample)
-
-                            $('#errorMatchModal').modal('show');
-                            resetImagesStyles()
-                            // User selected an incorrect match, do not move to the next type
-                            // You don't need to set selectedPaper to null here
-                        }
-
-                        selectedMicrostructure = null;
-                        selectedSampleRotation = null;
-                    }
+                // Check match correctness
+                if (
+                    selectedMicrostructure === correctMatches[selectedPaper].microstructure &&
+                    selectedSampleRotation === correctMatches[selectedPaper].sample
+                ) {
+                    $('#correctMatchModal').modal('show');
+                    setTimeout(() => moveToNextMaterial(), 500); // Move to the next material
                 } else {
-                    $('#errorTypeModal').modal('show');
+                    $('#errorMatchModal').modal('show'); // Show error modal
+                    resetStyles(); // Reset styles but keep current paper highlighted
+                    selectedMicrostructure = null;
+                    selectedSampleRotation = null;
                 }
-            });
-        });
+            }
+        } else {
+            $('#errorTypeModal').modal('show'); // Show error if no paper selected
+        }
+    });
+});
+
+// Auto-select the first polishing paper on page load
+window.addEventListener('load', () => {
+    const firstPaper = document.getElementById(typeOrder[0]);
+    if (firstPaper) {
+        firstPaper.classList.add('selected');
+        selectedPaper = firstPaper.id;
+    }
+});
+
 
     </script>
 

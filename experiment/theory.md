@@ -17,12 +17,15 @@ Another way to represent the images is by producing a projected image and its re
 *  Transmitted light microscopes are used for observing the microstructures of the transparent materials.<br> <br>
 *  Electron microscopes are used with higher resolutions to observe the images to obtain greater details and understand its features in the microstructures. Among these microscopes, most common are Scanning Electron Microscopes (SEM) which shows secondary and back scattered electron images, Transmission Electron Microscopes (TEM) which shows projected images, X-ray map images, and Scanning Tunnelling Microscopes (STM). Stereology has the power to quantify the true interlamellar spacing of the pearlite.<br> <br>
 
-<b>4 Important concepts of Stereology</b><br>
+<b>4 Important concepts of Stereology</b><br><br>
+
 <b>4.1  Sectioning or sampling </b><br> 
 Stereology involves sampling in a systematic random manner to ensure an unbiased representation of the entire structure to be studied. Sectioning involves random sampling of the 3-D block using a 2-D plane. Selection of the sample is done randomly and unbiasedly towards any specific regions of interest. <br><br>
 <b>4.2  Sampling probes </b><br> 
 Sampling probes are the basic measurement units used for the microstructural assessments and studies. Depending on the specific stereological method and property of interest, it can be represented using different shapes such as points, lines, areas, or volumes. To bring the accuracy to obtained results, selection of a proper probe is of utmost importance. Section can be done using these lines and probes and it is also known as sampling of materials or sampling by probes of various dimensions. If we section a 2-D system then the probe should be 2-D, section with line means a 1-D probe, and sectioning using a point means a 0-D probe.<br> <br>
-<b>5 Sampling of structures using different probes</b><br>
+
+<b>5 Sampling of structures using different probes</b><br><br>
+
 <b>5.1	Sampling using 2-D Probe (Plane probe)</b><br> 
 2-D Sampling can be viewed as an intersection of a plane with the structure. 3-D structure intersects using planes. After sectioning, lines appear at the sections of surfaces, points appear at the planes where the lines are present in 3-D structure, and area elements and section profiles appear at the places where particles are present in 3-D materials.<br><br> 
 <b>5.2	Sampling by 1-D Probe or Line</b><br> 
@@ -53,7 +56,8 @@ Stereological equations and mathematical models are employed to estimate the pro
 *	Stereological methods are statistical in nature. The analyses yield an average value and are subject to statistical errors.<br>  
 *	Stereological methods are based on mathematical rigour, probability and statistics.<br>
 
-<b>8 Methods of Stereology</b><br>
+<b>8 Methods of Stereology</b><br><br>
+
 <b>8.1	Point Counting</b><br> 
 In point counting, a grid with regularly spaced points is superimposed on a sample microstructure, and the number of points falling within the region of interest is counted. This method is commonly used for the estimation of volume fractions and particle densities.<br> <br>
 

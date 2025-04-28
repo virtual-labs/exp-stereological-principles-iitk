@@ -10,7 +10,7 @@
         "d": "Point probe"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -27,7 +27,7 @@
         "d": "Point fraction within the structure"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -44,12 +44,63 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
       "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. What is the main objective of stereology in materials characterization?",
+      "answers": {
+        "a": "To identify the chemical composition of a sample ",
+        "b": "To obtain 3D information from 2D cross-sections ",
+        "c": "To enhance the surface contrast of microstructures ",
+        "d": "To determine the color of metallographic features. "
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Which type of grid is typically used in the point counting method?",
+      "answers": {
+        "a": "Square or rectangular grid ",
+        "b": "Polar coordinate grid ",
+        "c": "Circular grid ",
+        "d": "Random scatter grid "
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "a ",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Which of the following stereological parameters is used to estimate grain size in a polycrystalline sample?",
+      "answers": {
+        "a": "Aspect ratio ",
+        "b": "Volume fraction ",
+        "c": "Line intercept count ",
+        "d": "X-ray diffraction pattern "
+      },
+      "explanations": {
+        "a": "Explanation 1",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "c ",
       "difficulty": "beginner"
     }
   ]

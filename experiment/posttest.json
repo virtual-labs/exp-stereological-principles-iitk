@@ -10,7 +10,7 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1 ",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -27,7 +27,7 @@
         "d": "Geometrical probability"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1 ",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
@@ -44,12 +44,63 @@
         "d": "None of them"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
+        "a": "Explanation 1 ",
         "b": "Explanation 2",
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. In the line intercept method, what is measured to calculate the grain size?",
+      "answers": {
+        "a": "The number of grains in an area ",
+        "b": "The number of intercepts between a line and grain boundaries ",
+        "c": "The intensity of reflected light from grains ",
+        "d": "The thickness of the sample "
+      },
+      "explanations": {
+        "a": "Explanation 1 ",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. The volume fraction of a phase using the point counting method is calculated by:",
+      "answers": {
+        "a": "Total line length / Number of grains",
+        "b": "Number of points on the phase / Total number of points",
+        "c": "Number of grains / Field of view",
+        "d": "Total area of phase / Total volume of sample"
+      },
+      "explanations": {
+        "a": "Explanation 1 ",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Which type of sampling probe is most suitable for estimating surface area per unit volume?",
+      "answers": {
+        "a": "Point probe",
+        "b": "Line probe",
+        "c": "Area probe",
+        "d": "Volume probe"
+      },
+      "explanations": {
+        "a": "Explanation 1 ",
+        "b": "Explanation 2",
+        "c": "Explanation 2",
+        "d": "Explanation 2"
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]

@@ -83,7 +83,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "a ",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
@@ -100,7 +100,7 @@
         "c": "Explanation 2",
         "d": "Explanation 2"
       },
-      "correctAnswer": "c ",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     }
   ]

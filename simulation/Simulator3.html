@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Simulator 3</title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+
+        .text {
+            background-color: yellow;
+            border-radius: 21px;
+            font-size: 22px;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 10px;
+        }
+
+
+        .main-title {
+            color: blue;
+            font-size: 25px;
+            font-weight: 500;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .polishing-paper,
+        .microstructure-images,
+        .sample-rotation {
+            width: 100%;
+            height: auto;
+            margin: 5px;
+            padding: 3px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+
+        .highlight {
+            background-color: rgb(136, 255, 0);
+            border-color: 2px solid red;
+            color: black;
+        }
+
+        .selected {
+            box-shadow: 2px -2px 43px 10px rgba(25, 135, 84, 0.8);
+            background-color: #198754;
+            color: white;
+
+        }
+
+        .highlighted-img {
+            -webkit-box-shadow: 2px -2px 43px 10px rgba(25, 135, 84, 0.8);
+            -moz-box-shadow: 2px -2px 43px 10px rgba(25, 135, 84, 0.8);
+            box-shadow: 2px -2px 43px 10px rgba(25, 135, 84, 0.8);
+        }
+    </style>
+
+</head>
+
+<body>
+    <button type="button" class="btn btn-outline-info mx-2 my-2"><a href="index.html">Go to main page</a></button>
+
+
+    <button type="button" class="btn btn-outline-info m-3"><a href="Simulator2.html">Back</a></button>
+    <button type="button" class="btn btn-outline-info m-3"><a href="Simulator4.html">Next</a></button>
+    <h2 class="d-flex justify-content-center align-items-center">Simulator 3</h2>
+    <p class="d-flex justify-content-center align-items-center text"> Match the 3D shapes (given in the first row) with
+        the top-view and side-view of the top portion of the shape sectioned by the plane.</p>
+
+
+    <div class="container mb-2">
+        <div class="row">
+            <span class="main-title">3D Shapes </span>
+            <div class="col-md-2 ">
+                <img class="polishing-paper" id="cone" src="./images/sim2-3d1.png" alt="" />
+            </div>
+            <div class="col-md-2 ">
+                <img class="polishing-paper" id="cube" src="./images/sim2-3d2.png" alt="" />
+            </div>
+            <div class="col-md-2 ">
+                <img class="polishing-paper" id="pyramid" src="./images/sim2-3d3.png" alt="" />
+            </div>
+            <div class="col-md-2 ">
+                <img class="polishing-paper" id="cylinder" src="./images/sim2-3d4.png" alt="" />
+            </div>
+            <div class="col-md-2 ">
+                <img class="polishing-paper" id="cuboid" src="./images/sim2-3d5.png" alt="" />
+            </div>
+
+        </div>
+        <div class="row">
+            <span class="main-title">Top-view of the top portion of the shape sectioned by the plane</span>
+            <div class="col-md-3  ">
+                <img class="microstructure-images" id="tsquare" src="./images/square.png" alt="" />
+            </div>
+
+            <div class="col-md-3  ">
+                <img class="microstructure-images" id="tcircle" src="./images/circle.png" alt="" />
+            </div>
+
+            <div class="col-md-3  ">
+                <img class="microstructure-images" id="thorizontal" src="./images/rectange-width.png" alt="" />
+            </div>
+
+
+        </div>
+
+
+        <div class="row">
+            <span class="main-title">Side-view of the top portion of the shape sectioned by the plane</span>
+            <div class="col-md-3   ">
+                <img class="sample-rotation" id="triangle" src="./images/triangle.png" alt="" />
+            </div>
+            <div class="col-md-3   ">
+                <img class="sample-rotation" id="square" src="./images/square.png" alt="" />
+            </div>
+            <div class="col-md-3   ">
+                <img class="sample-rotation" id="svertical" src="./images/rectangle-long.png" alt="" />
+            </div>
+            <div class="col-md-3  ">
+                <img class="sample-rotation" id="shorizontal" src="./images/rectange-width.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for Complete -->
+    <div class="modal fade" id="quizCompletedModal" tabindex="-1" aria-labelledby="correctMatchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="correctMatchModalLabel">Congratulations !</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    Quiz completed successfully.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="location.reload()"> Ok </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Correct Match -->
+    <div class="modal fade" id="correctMatchModal" tabindex="-1" aria-labelledby="correctMatchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="correctMatchModalLabel">Correct Match</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    Congratulations! You have made the correct match.
+                </div>
+                <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" onclick="location.reload()"> ok </button>
+          </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Error Match -->
+    <div class="modal fade" id="errorMatchModal" tabindex="-1" aria-labelledby="errorMatchModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorMatchModalLabel">Error</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    Please choose correct top view and side view of top portion of the shape sectioned by the plane.
+                </div>
+                <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" onclick="location.reload()"> ok </button>
+          </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Modal for Missing polishing paper   -->
+    <div class="modal fade" id="errorTypeModal" tabindex="-1" aria-labelledby="errorMatchModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorMatchModalLabel">Error</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    Please choose a 3D shape, and then select the correct top view and side view of the top portion of
+                    the shape sectioned by the plane.
+                </div>
+                <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" onclick="location.reload()"> ok </button>
+          </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+
+const correctMatches = {
+    'cone': { microstructure: 'tcircle', sample: 'triangle' },
+    'cube': { microstructure: 'tsquare', sample: 'shorizontal' },
+    'pyramid': { microstructure: 'tsquare', sample: 'triangle' },
+    'cylinder': { microstructure: 'tcircle', sample: 'svertical' },
+    'cuboid': { microstructure: 'thorizontal', sample: 'shorizontal' }
+};
+
+const typeOrder = ['cone', 'cube', 'pyramid', 'cylinder', 'cuboid'];
+
+const polishingPaperName = document.querySelectorAll('.polishing-paper');
+const images = document.querySelectorAll('img');
+let currentPaperIndex = 0;
+let selectedPaper = null;
+let selectedMicrostructure = null;
+let selectedSampleRotation = null;
+
+function resetStyles(keepCurrentPaper = true) {
+    // Reset all paper highlights except the current one if required
+    polishingPaperName.forEach((name, index) => {
+        if (keepCurrentPaper && index === currentPaperIndex) {
+            name.classList.add('selected');
+        } else {
+            name.classList.remove('selected');
+        }
+    });
+
+    // Reset all image highlights
+    images.forEach(image => image.classList.remove('highlighted-img'));
+}
+
+function moveToNextMaterial() {
+    currentPaperIndex++;
+    if (currentPaperIndex < typeOrder.length) {
+        resetStyles(); // Reset previous styles and highlight the next paper
+        selectedMicrostructure = null;
+        selectedSampleRotation = null;
+
+        const nextPaper = document.getElementById(typeOrder[currentPaperIndex]);
+        if (nextPaper) {
+            nextPaper.classList.add('selected'); // Highlight the next paper
+            selectedPaper = nextPaper.id;
+        }
+    } else {
+        $('#quizCompletedModal').modal('show'); // Show completion modal
+    }
+}
+
+// Event listener for polishing paper selection
+polishingPaperName.forEach(paper => {
+    paper.addEventListener('click', () => {
+        if (selectedPaper !== paper.id) {
+            resetStyles(false); // Reset but keep the current paper if switching
+            paper.classList.add('selected');
+            selectedPaper = paper.id;
+        }
+    });
+});
+
+// Event listener for image selection
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        if (selectedPaper) {
+            if (!selectedMicrostructure) {
+                selectedMicrostructure = image.id;
+                image.classList.add('highlighted-img');
+            } else if (!selectedSampleRotation) {
+                selectedSampleRotation = image.id;
+                image.classList.add('highlighted-img');
+
+                // Check match correctness
+                if (
+                    selectedMicrostructure === correctMatches[selectedPaper].microstructure &&
+                    selectedSampleRotation === correctMatches[selectedPaper].sample
+                ) {
+                    $('#correctMatchModal').modal('show');
+                    setTimeout(() => moveToNextMaterial(), 500); // Move to the next material
+                } else {
+                    $('#errorMatchModal').modal('show'); // Show error modal
+                    resetStyles(); // Reset styles but keep current paper highlighted
+                    selectedMicrostructure = null;
+                    selectedSampleRotation = null;
+                }
+            }
+        } else {
+            $('#errorTypeModal').modal('show'); // Show error if no paper selected
+        }
+    });
+});
+
+// Auto-select the first polishing paper on page load
+window.addEventListener('load', () => {
+    const firstPaper = document.getElementById(typeOrder[0]);
+    if (firstPaper) {
+        firstPaper.classList.add('selected');
+        selectedPaper = firstPaper.id;
+    }
+});
+
+
+    </script>
+
+
+
+</body>
+
+</html>

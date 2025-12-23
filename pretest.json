@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. 2-D probe is also known as",
+      "answers": {
+        "a": "Area probe",
+        "b": "Plane probe",
+        "c": "Line probe",
+        "d": "Point probe"
+      },
+      "explanations": {
+        "a": "This is an incorrect option because although a 2-D probe collects data over a surface, the term “area probe” is not standard terminology.",
+        "b": "This is the correct option. A 2-D probe scans a surface or a plane, collecting data across two dimensions",
+        "c": "This is an incorrect option because a line probe collects data along only one dimension",
+        "d": "This is an incorrect option because a point probe collects data at a single location rather than across a plane."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Area fraction method calculates",
+      "answers": {
+        "a": "Area fraction of particles within the structure",
+        "b": "Line fraction of dislocations within the structure",
+        "c": "Volume fraction of the structures within a 2-D plane",
+        "d": "Point fraction within the structure"
+      },
+      "explanations": {
+        "a": "This is the correct option. The area fraction method is a quantitative metallography technique used to measure the fraction of a 2-D micrograph occupied by a particular phase, particle, or inclusion.",
+        "b": "This is an incorrect option because the area fraction method measures surface area coverage, not the length of line features like dislocations.",
+        "c": "This is an incorrect option because area fraction measures 2-D surface coverage, not true 3-D volume.",
+        "d": "This is an incorrect option because point counting is a separate method."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Point counting method is used for the estimation of",
+      "answers": {
+        "a": "Volume fractions and particle densities",
+        "b": "Line fraction of dislocations",
+        "c": "Both the above",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "This is the correct option. The point counting method is a stereological technique used in metallography to estimate the volume fraction of phases and the density of particles or inclusions in a material.",
+        "b": "This is an incorrect option because point counting estimates area/volume fractions, not line lengths or dislocation density.",
+        "c": "This is an incorrect option because point counting does not include line fraction measurements, so only volume fractions and particle densities are measured.",
+        "d": "This is an incorrect option because point counting is indeed used for estimating volume fractions and particle densities."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. What is the main objective of stereology in materials characterization?",
+      "answers": {
+        "a": "To identify the chemical composition of a sample ",
+        "b": "To obtain 3D information from 2D cross-sections ",
+        "c": "To enhance the surface contrast of microstructures ",
+        "d": "To determine the color of metallographic features. "
+      },
+      "explanations": {
+        "a": "This is an incorrect option because stereology deals with structural and geometric analysis, not chemical composition.",
+        "b": "This is the correct option. Stereology is a branch of materials characterization that uses 2D images (micrographs) to make quantitative inferences about 3D structures, such as volume fraction, particle size, and spatial distribution.",
+        "c": "This is an incorrect option because contrast enhancement is achieved through etching or imaging techniques, not stereological analysis.",
+        "d": "This is an incorrect option because stereology is quantitative and dimensional, focusing on shape, size, and distribution, not color."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Which type of grid is typically used in the point counting method?",
+      "answers": {
+        "a": "Square or rectangular grid ",
+        "b": "Polar coordinate grid ",
+        "c": "Circular grid ",
+        "d": "Random scatter grid "
+      },
+      "explanations": {
+        "a": "This is the correct option. In the point counting method, a square or rectangular grid is superimposed over a micrograph, and the points that fall on the phase or feature of interest are counted.",
+        "b": "This is an incorrect option because point counting requires a uniformly spaced grid for reproducible measurements; polar grids are suited for circular or rotational analyses, not standard volume fraction estimation.",
+        "c": "This is an incorrect option because circular grids do not provide uniform coverage over the micrograph and are not standard for counting points systematically.",
+        "d": "This is an incorrect option because point counting relies on systematic, evenly spaced points, not randomly scattered points, to ensure statistical accuracy and repeatability."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Which of the following stereological parameters is used to estimate grain size in a polycrystalline sample?",
+      "answers": {
+        "a": "Aspect ratio ",
+        "b": "Volume fraction ",
+        "c": "Line intercept count ",
+        "d": "X-ray diffraction pattern "
+      },
+      "explanations": {
+        "a": "This is an incorrect option because aspect ratio describes the shape or elongation of grains or particles, not their absolute size.",
+        "b": "This is an incorrect option because volume fraction quantifies the proportion of a phase within the microstructure, which does not provide direct information about individual grain size.",
+        "c": "This is the correct option. The line intercept method is a common stereological technique to estimate the average grain size in polycrystalline materials.",
+        "d": "This is an incorrect option because XRD provides crystallographic structure and lattice parameters, not a direct measure of grain size from the microstructure."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

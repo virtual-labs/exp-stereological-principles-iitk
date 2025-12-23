@@ -10,10 +10,10 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1 ",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option because a line probe, not a plane probe, produces a 1-D line intersection. ",
+        "b": "This is the correct option. A plane probe intersects a three-dimensional feature, producing a two-dimensional cross-sectional area that can be analyzed.",
+        "c": "This is an incorrect option because the plane probe intersects the volume to produce a 2-D plane, not a 3-D section.",
+        "d": "This is an incorrect option because the correct outcome, a 2-D cross-sectional plane, does occur."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -27,10 +27,10 @@
         "d": "Geometrical probability"
       },
       "explanations": {
-        "a": "Explanation 1 ",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option because Euler’s theorem deals with topology (vertices, edges, faces) and is not the foundation of stereology.",
+        "b": "This is an incorrect option because stereology does not primarily rely on angles or trigonometric calculations; it’s about statistical interpretation of 2D-3D relationships.",
+        "c": "This is an incorrect option because classical Euclidean geometry provides shape and measurement rules but does not incorporate the probabilistic approach required to infer 3D structures from 2D sections.",
+        "d": "This is the correct option. Stereology uses random sampling and geometrical principles to obtain quantitative 3D information from 2D sections, which is fundamentally based on geometrical probability."
       },
       "correctAnswer": "d",
       "difficulty": "beginner"
@@ -44,10 +44,10 @@
         "d": "None of them"
       },
       "explanations": {
-        "a": "Explanation 1 ",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option as stereology also requires probability principles to relate 2D observations to 3D structures.",
+        "b": "This is an incorrect option as statistical sampling is also essential for reliable quantitative measurements.",
+        "c": "This is the correct option. Stereology relies on statistical sampling and geometrical probability to extract quantitative 3D information from 2D cross-sections.",
+        "d": "This is an incorrect option since both statistics and probability are fundamental to stereological methods."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -61,10 +61,10 @@
         "d": "The thickness of the sample "
       },
       "explanations": {
-        "a": "Explanation 1 ",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option because line intercept focuses on counting intersections, not entire grains.",
+        "b": "This is the correct option. In the line intercept method, a test line is drawn over the microstructure, and the number of times it intersects grain boundaries is counted.",
+        "c": "This is an incorrect option. Light intensity does not provide information about the number of grain boundaries intersected by a line, so it is irrelevant.",
+        "d": "This is an incorrect option. Grain size in the line intercept method is calculated from a 2D micrograph."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -78,10 +78,10 @@
         "d": "Total area of phase / Total volume of sample"
       },
       "explanations": {
-        "a": "Explanation 1 ",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option. The fraction describes a line-based method (like line intercept method) for estimating grain size, not volume fraction.",
+        "b": "This is the correct option. In the point counting method, a grid of points is superimposed on the microstructure. The fraction of points that fall on the phase of interest relative to the total number of points gives an estimate of the volume fraction of that phase.",
+        "c": "This is an incorrect option. The fraction measures grain density or count per area, not the fraction of a specific phase.",
+        "d": "This is an incorrect option. While conceptually close to volume fraction, in point counting we don’t measure actual areas or volumes directly."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -95,10 +95,10 @@
         "d": "Volume probe"
       },
       "explanations": {
-        "a": "Explanation 1 ",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "This is an incorrect option because point probes are used to estimate volume fractions of phases, not surface area per unit volume.",
+        "b": "This is the correct option. A line probe intersects features along a line, allowing measurement of length per unit area, which can be converted to surface area per unit volume using stereological relationships.",
+        "c": "This is an incorrect option because area probes measure area fractions on a 2-D plane, which is not directly used for surface area per unit volume calculations.",
+        "d": "This is an incorrect option because volume probes are not standard stereological tools."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
